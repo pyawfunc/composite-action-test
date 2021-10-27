@@ -5,8 +5,13 @@ runs:
   using: "composite"
   steps:
     - name: "Checkout"
+      ::group::checkout
       uses: actions/checkout@v2
+      ::endgroup::
 
     - name: "Hello World"
       shell: bash
-      run: echo 'Hello World'
+      run: |
+        ::group::HelloWorld
+        echo 'Hello World'
+        ::endgroup::
