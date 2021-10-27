@@ -1,9 +1,6 @@
 name: "Main Step"
 on:
-  pull_request:
-    branches:
-      - master
-    types: [opened, synchronize, closed]
+  push
 
 jobs:
   composite_test:
