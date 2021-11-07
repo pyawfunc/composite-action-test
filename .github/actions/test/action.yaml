@@ -8,12 +8,12 @@ runs:
       shell: bash
       run: |
         echo "::group::step1"
-        echo "step1の内容"
+        uname -a
         echo "::endgroup::"
 
     - name: "Hello World"
       shell: bash
       run: |
         echo "::group::step2"
-        echo "step2の内容"
+        uname -a
         echo "::endgroup::"
