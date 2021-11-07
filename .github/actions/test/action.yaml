@@ -7,13 +7,13 @@ runs:
     - name: "Checkout"
       shell: bash
       run: |
-        ::group::step1
-        echo 'step1'
-        ::endgroup::
+        echo "::group::step1"
+        echo "step1の内容"
+        echo "::endgroup::"
 
     - name: "Hello World"
       shell: bash
       run: |
-        ::group::step2
-        echo 'step2'
-        ::endgroup::
+        echo "::group::step2"
+        echo "step2の内容"
+        echo "::endgroup::"
